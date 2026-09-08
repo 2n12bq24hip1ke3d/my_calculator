@@ -33,7 +33,7 @@ class TestMultiplyDivideWithValidation:
         with pytest.raises(TypeError, match="Division requires numeric inputs"):
             divide("10", 2)
 
-def test_power_input_validation(self):
+    def test_power_input_validation(self):
         """Test power rejects non-numeric inputs."""
         with pytest.raises(TypeError, match="Both arguments must be numbers"):
             power("2", 3)
